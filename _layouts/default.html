@@ -7,6 +7,8 @@ layout: table_wrappers
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
 <body>
+  
+  <!--SVG shenanigans to set up icons for menu and search-->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="svg-link" viewBox="0 0 24 24">
       <title>Link</title>
@@ -40,6 +42,7 @@ layout: table_wrappers
     </symbol>
   </svg>
 
+  
   <div class="side-bar">
     <div class="site-header">
       <a href="{{ '/' | absolute_url }}" class="site-title lh-tight">{% include title.html %}</a>
@@ -69,6 +72,8 @@ layout: table_wrappers
       This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
     </footer>
   </div>
+  
+  
   <div class="main" id="top">
     <div id="main-header" class="main-header">
       {% if site.search_enabled != false %}
@@ -99,6 +104,7 @@ layout: table_wrappers
         </nav>
       {% endif %}
     </div>
+    
     <div id="main-content-wrap" class="main-content-wrap">
       {% unless page.url == "/" %}
         {% if page.parent %}
@@ -131,12 +137,22 @@ layout: table_wrappers
         {% endif %}
       {% endunless %}
       <div id="main-content" class="main-content" role="main">
+        
+<!--MAIN SITE CONTENT GOES HERE
+   VVVVVVVVVVVVVVVVVVVVVVVVVVVV-->
+        
         {% if site.heading_anchors != false %}
-          {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+{% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
         {% else %}
-          {{ content }}
+{{ content }}
         {% endif %}
 
+        
+<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    MAIN SITE CONTENT GOES HERE-->
+        
+        
+        
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
           <h2 class="text-delta">Table of contents</h2>
