@@ -9,4 +9,4 @@ I make the following changes to customize it for my own use:
     - changed font properties so diacritics are rendered properly
 - Removed the footer
 - added latex rendering with katex 
-- chang
+- toggled off html compression
