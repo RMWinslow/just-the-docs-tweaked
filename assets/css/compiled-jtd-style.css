@@ -167,7 +167,7 @@ template {
 }
 html {
     font-size: 14px !important;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 @media (min-width: 31.25rem) {
     html {
