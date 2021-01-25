@@ -534,52 +534,16 @@ body {
     margin-top: 0.5em;
 }
 .main-content dl {
-    display: grid;
-    grid-template: auto / 10em 1fr;
-}
-.main-content dt,
-.main-content dd {
-    margin: 0.25em 0;
 }
 .main-content dt {
-    grid-column: 1;
-    font-weight: 500;
-    text-align: right;
+    font-weight: bold;
 }
 .main-content dt::after {
     content: ":";
 }
 .main-content dd {
-    grid-column: 2;
-    margin-bottom: 0;
-    margin-left: 1em;
-}
-.main-content dd blockquote:first-child,
-.main-content dd div:first-child,
-.main-content dd dl:first-child,
-.main-content dd dt:first-child,
-.main-content dd h1:first-child,
-.main-content dd h2:first-child,
-.main-content dd h3:first-child,
-.main-content dd h4:first-child,
-.main-content dd h5:first-child,
-.main-content dd h6:first-child,
-.main-content dd li:first-child,
-.main-content dd ol:first-child,
-.main-content dd p:first-child,
-.main-content dd pre:first-child,
-.main-content dd table:first-child,
-.main-content dd ul:first-child,
-.main-content dd .table-wrapper:first-child {
-    margin-top: 0;
-}
-.main-content dd dl:first-child dt:first-child,
-.main-content dd dl:first-child dd:nth-child(2),
-.main-content ol dl:first-child dt:first-child,
-.main-content ol dl:first-child dd:nth-child(2),
-.main-content ul dl:first-child dt:first-child,
-.main-content ul dl:first-child dd:nth-child(2) {
-    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 90%;
 }
 .main-content .anchor-heading {
     position: absolute;
