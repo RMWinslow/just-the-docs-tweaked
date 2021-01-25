@@ -8,6 +8,7 @@ I make the following changes to customize it for my own use:
     - deleted a bunch of the JTD utility classes that I don't need.
     - changed font properties so diacritics are rendered properly
     - added styling so that `<aside>` elements are placed in the page margins
+    - replaced the defintion list styling with [the styling Mozilla uses as an example here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl).
     - removed some annoying css overengineering:
         - Unordered lists just use the default rendering instead of the convoluted JTD thing where the bullet points are removed then replaced.
         - links (`<a>` elements) don't have wordwrap turned off.
