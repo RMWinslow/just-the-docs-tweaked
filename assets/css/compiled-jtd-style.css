@@ -537,7 +537,7 @@ body {
     content: ":";
 }
 .main-content dd {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     font-size: 90%;
 }
 .main-content .anchor-heading {
